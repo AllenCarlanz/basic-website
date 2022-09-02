@@ -1,0 +1,103 @@
+img {
+    width: 100%;
+    height: auto;
+}
+
+.mobOnly {
+    display: none;
+}
+
+#container {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    text-align: justify;
+}
+
+#about {
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style: none;
+}
+
+#social {
+    padding-left: 0;
+}
+
+#leftCtr {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 20px;
+}
+
+#rightCtr {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 20px;
+}
+
+@media (max-width: 769px) {
+    #container {
+        max-width: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .hideMob {
+        display: none;
+    }
+
+    .mobOnly {
+        display: block;
+    }
+
+    #container {
+        font-size: larger;
+    }
+
+    #social li {
+        display: inline-block;
+        margin: auto 10px;
+    }
+
+    #leftCtr {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        padding: 10px 30px;
+    }
+
+    #rightCtr {
+        width: 100%;
+        display: block;
+        padding: 10px 30px;
+    }
+
+    img {
+        max-width: 200px;
+    }
+}
+
+/* Pag ung screen size mo is
+0 to 300px  */
+@media (max-width: 300px) {
+    #about {
+        color: red;
+        font-weight: bold;
+
+    }
+}
+
+/* Pag ung screen size mo is
+from 301px to infinity */
+@media (min-width: 301px) {
+    #about {
+        color: blue;
+        text-decoration: dashed;
+    }
+}
